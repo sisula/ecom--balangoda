@@ -177,7 +177,7 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ id: s
 
   return (
     // 👇 පිටුවෙ Background එක Gray කළා 
-    <div className="min-h-screen bg-gray-50 relative pb-10">
+    <div className="min-h-screen bg-gray-50 relative">
 
       <div className={`fixed top-5 left-1/2 -translate-x-1/2 z-[100] transition-all duration-300 ease-out flex items-center gap-3 px-5 py-3 rounded-full shadow-2xl bg-white border ${toast.show ? 'translate-y-0 opacity-100' : '-translate-y-16 opacity-0 pointer-events-none'} ${toast.type === 'success' ? 'border-emerald-200' : 'border-red-200'}`}>
         {toast.type === 'success' ? (
